@@ -32,6 +32,38 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
+                            @can('view-any', App\Models\Client::class)
+                            <li class="nav-item">
+                                <a href="{{ route('clients.index') }}" class="nav-link">
+                                    <i class="nav-icon icon ion-md-radio-button-off"></i>
+                                    <p>Clientes</p>
+                                </a>
+                            </li>
+                            @endcan
+                            @can('view-any', App\Models\Vehicle::class)
+                            <li class="nav-item">
+                                <a href="{{ route('vehicles.index') }}" class="nav-link">
+                                    <i class="nav-icon icon ion-md-radio-button-off"></i>
+                                    <p>Veiculos</p>
+                                </a>
+                            </li>
+                            @endcan
+                            @can('view-any', App\Models\Piece::class)
+                            <li class="nav-item">
+                                <a href="{{ route('pieces.index') }}" class="nav-link">
+                                    <i class="nav-icon icon ion-md-radio-button-off"></i>
+                                    <p>Pecas</p>
+                                </a>
+                            </li>
+                            @endcan
+                            @can('view-any', App\Models\User::class)
+                            <li class="nav-item">
+                                <a href="{{ route('users.index') }}" class="nav-link">
+                                    <i class="nav-icon icon ion-md-radio-button-off"></i>
+                                    <p>Usuarios</p>
+                                </a>
+                            </li>
+                            @endcan
                     </ul>
                 </li>
 
