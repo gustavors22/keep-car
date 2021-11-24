@@ -203,6 +203,10 @@ img {
   border-style: none;
 }
 
+img {
+  border-radius: 50%;
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -35406,6 +35410,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   color: #495057;
 }
 
+
 .login-page,
 .register-page {
   -webkit-align-items: center;
@@ -35521,7 +35526,6 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
 .dark-mode .register-logo a {
   color: #fff;
 }
-
 .error-page {
   margin: 20px auto 0;
   width: 600px;

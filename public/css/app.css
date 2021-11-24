@@ -197,6 +197,9 @@ img {
   border-style: none;
 }
 
+img {
+  border-radius: 50%;
+}
 svg {
   overflow: hidden;
   vertical-align: middle;
